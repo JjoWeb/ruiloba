@@ -68,41 +68,37 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :root :where(.wp-block-separator){border-color: currentColor;border-width: 0 0 1px 0;border-style: solid;color: var(--wp--preset--color--contrast);}:root :where(.wp-block-separator){}:root :where(.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull)){width: var(--wp--preset--spacing--60)}
 :where(.wp-site-blocks *:focus){outline-width:2px;outline-style:solid}
 
+/* Header section */
+
 .header {
 position: sticky !important;
 top: 0px !important;
 z-index: 2;
 box-shadow: #fbf4e2 0rem 1rem 1rem !important;
 }
-
 .header_row {
 margin: auto !important;
 width: 90% !important;
 }
-
 .header_title_separator {
 width: 8rem !important;
 }
-
 .header_phrase_invierteProposito {
 margin-top: -.3rem !important;
 }
-
 .header_icon-whatsapp {
 margin-bottom: .4rem !important;
 }
-
 .header_circle {
 width: 6.9rem;
 height: 6.9rem;
 }
 
+/* Video section */
 
 .container_iframe {
 width: 100% !important;
 }
-
-
 .container_videoRuta {
 margin: 0rem 10rem;
 box-shadow: inset 0rem 0rem 1rem 1.5rem #fbf4e2;
@@ -111,72 +107,66 @@ background-repeat: no-repeat;
 background-position: center;
 }
 
-
+/* Modelo de Inversion section*/
 
 .container_ModeloDeInversion {
 width: 70%;
 margin: auto;
 margin-top: 1.5rem;
 }
-
 .ModeloDeInversion_p_DuplicaTuCapital {
 margin: 0rem 4rem !important;
 }
-
 .ModeloDeInversion_p_compraTuLote {
 border-radius: 2rem;
 font-size: 25px !important;
 }
 
+/* Sticky button section */
 
 .groupContainer_button_recibirDossier{
 position: sticky !important;
 top: 2rem !important;
 margin-top: -9rem !important;
 }
-
 .container_button_recibirDossier {
 width: 40% !important;
 margin: auto;
 }
 
+/* Ventajas section */
 
 .container_ventajas {
 width: 90%;
 margin: auto;
 }
-
 .ventajas_cover_textCancun {
 width: 30%;
 margin: auto !important;
 border-radius: 2rem;
 }
-
 .ventajas_cover_textYucatan {
 width: 35%;
 margin: auto !important;
 border-radius: 2rem;
 }
-
 .ventajas_row {
 width: 90%;
 margin: auto;
 }
-
 .ventajas_leftCol_p_vila {
 margin: auto !important;
 margin-top: -1rem !important;
 }
-
 .ventajas_rightColumn {
 margin: 3rem 1rem 0 1rem !important;
 }
-
 .ventajas_rightCol_p {
 border-radius: 2rem;
 }
 
 
+/* Proyecto section */
 
 .proyecto_title {
 width: 90% !important;
@@ -184,94 +174,108 @@ margin: auto;
 }
 
 
+/* Tu Inversion section */
 
 .container_tuInversion {
 width: 70%;
 margin: auto;
 }
-
 .tuInversion_title {
 border-radius: 2rem;
 }
-
-
 .tuInversion_leftColumn {
 height: 100% !important;
 }
-
 .tuInversion_leftColumn_p, .tuInversion_rightColumn_p {
 font-size: 25px !important;
 }
-
 .container_button_quieroLote {
 width: 60% !important;
 margin: auto !important;
 }
 
-
+/* Nuestro Compromiso section */
 
 .compromiso_stack {
 width: 90%;
 margin: auto !important;
 }
-
 .compromiso_p {
 width: 100%;
 }
-
 .container_button_quieroInfo {
 width: 33% !important;
 }
 
-
+/* Nuestra Historia section */
 
 .historia_title {
 width: 90%;
-
 margin: auto !important;
 }
-
 .historia_stack {
 width: 90%;
 margin: auto !important;
 }
-
 .historia_heading_ruiloba {
 font-size: 5rem !important;
 }
-
 .historia_heading_nuestraHistoria {
 margin-top: -.6rem !important;
 }
-
 .historia_timeLine_stack {
 margin: auto;
 }
-
 .historia_timeLine_topRow {
 width: 70%;
 }
-
-.history_timeLine_middleRow {
+.historia_timeLine_middleRow {
 width: 80%;
 }
-
-.history_timeLine_bottomRow {
+.historia_timeLine_bottomRow {
 width: 70%;
 }
-
 .historia_timeLine_p {
 border-radius: 2rem;
 }
 
+/* Footer section */
 
 .footer_columnsContainer {
 width: 90%;
 margin: auto !important;
 }
-
 .byJjo {
 margin-right: 5px !important;
+}
+
+/* Media Query section */
+
+@media only screen and (min-width: 1000px) {
+
+.templatePart_mobileMessage {
+display: none !important;
+}
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+.header,
+.container_video,
+.promo-video,
+.container_ModeloDeInversion,
+.groupContainer_button_recibirDossier,
+.container_ventajas, 
+.container_elProyecto,
+.container_tuInversion,
+.container_nuestroCompromiso,
+.container_nuestraHistoria,
+.footer {
+display: none !important;
+}
+
 }
 
 
